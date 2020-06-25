@@ -1,5 +1,5 @@
 <?php
-
+  /*
   session_start();
 
   if (isset($_COOKIES['user_id'])) {
@@ -17,6 +17,8 @@
     header('location: login.php');
     exit();
   }
+  
+  */
 
 ?>
 
