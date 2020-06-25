@@ -1,0 +1,225 @@
+*{
+
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+.top_bar {
+
+	width: 100%;
+	height: 8%;
+	border: 1px solid #d3d3d3;
+	box-shadow: 2px 2px 6px #d3d3d3;
+}
+
+.top_bar h2 {
+
+	text-align: left;
+	padding-left: 20px;
+	font-size: 38px;
+	font-weight: bold;
+	color: #f33;
+	font-family: 'forte',sans-serif;
+	line-height: 55px;
+}
+/*-----------sign up ----------------------*/
+.sign_up {
+
+	width: 100%;
+	height: 92%;
+}
+
+.sign_up .sign_up_header {
+
+	margin: 0;
+	width: 100%;
+	padding-top: 10px;
+	background-color: #fff;
+	border-bottom: 1px solid #d3d3d3;
+	box-shadow: 2px 2px 4px #d3d3d3;
+	text-align: center;
+}
+
+.sign_up .sign_up_header h2 {
+
+	font-weight: bold;
+	font-size: 20px;
+	color: #333;
+	font-style: italic;
+	font-family: 'elephant',sans-serif;
+	margin-top: 10px;
+}
+
+.sign_up .sign_up_header .why_choose_chattie {
+
+	width: 100%;
+}
+
+.sign_up .sign_up_header .why_choose_chattie p {
+
+	font-size: 14px;
+	opacity: .7;
+	padding:;
+	margin-top: 0;
+	font-weight: bold;
+	color: #ccc;
+}
+.sign_up form {
+
+	width: 100%;
+	height: 60%;
+	padding: 10px 0;
+}
+
+.sign_up form .input_box {
+
+	width: 100%;
+}
+
+.sign_up form .input_box select {
+
+	width: 85%;
+	padding: 7px;
+	font-size: 13px;
+	opacity: .7;
+	margin-top: 15px;
+	margin-left: 5px;
+}
+
+.sign_up form input {
+
+	margin-top: 15px;
+	width: 85%;
+	margin-left: 5px;
+	padding: 7px;
+	font-size: 13px;
+}
+.sign_up form button {
+
+	width: 95%;
+	margin-left: 5px;
+	padding: 7px 0;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	background-color: #f33;
+	border: 1px solid #f33;
+	border-radius: 3px;
+}
+
+.sign_up form button:hover {background-color: #333;border: 1px solid #333;}
+
+.snackbar {
+
+	width: 200px;
+	background-color: #333;
+	color: #fff;
+	position: fixed;
+	left: 2%;
+	bottom: 30px;
+	text-align: center;
+	padding: 15px;
+	border-radius: 3px;
+	display: none;
+	-webkit-animation: fadein 0.2s, fadeout 0.5s 2.5s;
+  	animation: fadein 0.2s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+
+@media only screen and (min-width: 768px) {
+
+	.sign_up {
+
+		width: 55%;
+		margin-left: 20%;
+	}
+
+	.sign_up .sign_up_header {
+
+		height: 27%;
+	}
+
+	.sign_up .sign_up_header .why_choose_chattie p {
+
+		margin-top: 5px;
+		line-height: 15px;
+	}
+	.sign_up form {
+
+		width: 90%;
+		margin-left: 15%;
+	}
+
+	.sign_up form .input_box {
+
+		display: inline-flex;
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	.sign_up form .input_box input {
+
+		width: 35%;
+		margin-left: 11px;
+		padding: 7px 5px;
+		font-size: 15px;
+	}	
+
+	.sign_up form .input_box select {
+
+		width: 40%;
+		margin-right: 10px;
+	}
+
+	.sign_up form input {
+
+		width: 65%;
+		margin-left: 10%;
+		padding: 7px 5px;
+		font-size: 15px;
+	}
+
+	.sign_up form button {
+
+		width: 70%;
+		margin-left: 8%;
+		font-size: 17px;
+		padding: 10px 0;
+	}
+	
+	.snackbar {
+
+		width: 250px;
+		margin-left: -125px;/*half the width to position it at the center*/
+		left: 50%;
+	}
+
+}

@@ -1,0 +1,283 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+.top_bar {
+
+	width: 100%;
+	height: 8%;
+	border: 1px solid #d3d3d3;
+	box-shadow: 2px 2px 6px #d3d3d3;
+}
+
+.top_bar h2 {
+
+	text-align: left;
+	padding-left: 20px;
+	font-size: 38px;
+	font-weight: bold;
+	color: #f33;
+	font-family: 'forte',sans-serif;
+	line-height: 55px;
+}
+
+.main_content {
+	width: 100%;
+	height: 92%;
+}
+.welcome_screen {
+
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.welcome_screen .welcome_header {
+
+	width: 100%;
+	height: 60%;
+	margin-bottom: 0;
+	position: relative;
+	background-image: url('../images/welcome.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: fixed;
+}
+
+.welcome_screen .welcome_header h2 {
+	font-weight: bold;
+	color: #d3d3d3;
+	font-size: 40px;
+	position: absolute;
+	bottom: 10%;
+	left: 20%;
+	font-family: 'forte',sans-serif;
+}
+
+.welcome_screen .welcome_text {
+
+	width: 100%;
+	height: 23%;
+	padding: 28px 0 0 0;
+}
+
+.welcome_screen .welcome_text h3 {
+
+	font-size: 22px;
+	font-weight: bold;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.welcome_screen .welcome_text p {
+
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 30px;
+	color: #d3d3d3;
+	padding: 10px;
+}
+
+.welcome_screen .welcome_text button {
+
+	width: 95%;
+	margin-left: 5px;
+	background-color: #06f;
+	color: #fff;
+	border: 1px solid #06f;
+	box-shadow: none;
+	border-radius: 3px;
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+	padding-top: 3px;
+}
+
+.welcome_screen .welcome_text button i {
+
+	margin-left: 6px;
+}
+
+.welcome_screen .welcome_text button:hover {
+
+	background-color: #f33;
+	border: 1px solid #f33;
+}
+
+.login_form {
+
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.login_form .login_form_top {
+	width: 100%;
+	height: 40%;
+	background-image: url(../images/welcome.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: fixed;
+	position: relative;
+}
+
+.login_form .login_form_top img {
+
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -30px;
+	left: 40%;
+}
+
+.login_form form {
+
+	width: 100%;
+	height: 35%;
+	margin-top: 20px;
+}
+
+.login_form form .input_box {
+
+	margin-top: 10px;
+	width: 93%;
+	margin-top: 10px;
+}
+
+.login_form form .input_box label {
+	width: 90%;
+	margin-left: 10px;
+	font-size: 13px;
+	color: #4d4d4d;
+	margin-top: 10px;
+}
+
+.login_form form .input_box input {
+
+	width: 90%;
+	height: 20px;
+	margin-top: 10px;
+	padding: 3px 7px;
+	margin-left: 10px;
+	font-size: 13px;
+	border: none;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.login_form form button {
+
+	width: 90%;
+	font-size: 17px;
+	padding: 10px 0;
+	color: #fff;
+	margin-left: 10px;
+	margin-top: 50px;
+	background-color: #f33;
+	border: 1px solid #f33;
+	border-radius: 3px;
+}
+
+.login_form form button:hover {
+
+	background-color: #333;
+	border: 1px solid #333;
+}
+
+.login_form .form_info {
+
+	width: 90%;
+	height: 20%;
+	margin-top: 40px;
+}
+
+.login_form .form_info p{
+	font-size: 15px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.login_form .form_info p a {text-decoration: none;}
+.login_form .form_info p:hover a{
+
+	text-decoration: underline;
+}
+.login_form .form_info p:nth-child(2) {
+
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(0,0,0,.7);
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+	
+	.main_content {
+		display: inline-flex;
+		width: 100%;
+	}
+
+	.welcome_screen {
+		width: 50%;
+	}
+
+	.welcome_screen {
+		display: block;
+	}
+
+	.welcome_screen .welcome_text button {display: none;}
+	.login_form {
+
+		width: 50%;
+		display: block;
+	}
+	.login_form .login_form_top {height: 100px;}
+
+	.login_form .login_form_top {background-image: none;}
+
+	.login_form .login_form_top img {
+
+		bottom: -10px;
+		width: 100px;
+		height: 100px;}
+
+	.login_form form {
+		width: 60%;
+		margin-left: 25%;
+	}
+
+
+	.login_form form .input_box label {font-size: 17px;}
+
+
+	.login_form .form_info {
+
+		width:100%;
+		margin-top: 70px;
+	}
+
+	.login_form .form_info p{
+
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		margin-top: 15px;
+		font-size: 15px;
+		line-height: 25px;
+	}
+
+
+}
+
