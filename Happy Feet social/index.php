@@ -1,5 +1,5 @@
 <?php
-  /*
+
   session_start();
 
   if (isset($_COOKIES['user_id'])) {
@@ -18,7 +18,7 @@
     exit();
   }
   
-  */
+
 
 ?>
 
